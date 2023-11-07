@@ -1,0 +1,10 @@
+<launch>
+
+  <arg name="path" default="$(find psr_parte10_ex4)/src/pr2_mit_demo_pari.bag"/>
+  <arg name="rvizconfig" default="$(find psr_parte10_ex4)/config/rviz.rviz" />
+
+  <node pkg="rosbag" type="play" name="player" output="screen" args="$(find psr_parte10_ex4)/src/pr2_mit_demo_pari.bag"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
+
+
+</launch>
