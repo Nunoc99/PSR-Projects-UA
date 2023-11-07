@@ -1,0 +1,34 @@
+<launch>
+
+  <rosparam command="load" file="$(find psr_parte09_ex4_bringup)/params/params.yaml" />
+
+  <node pkg="psr_parte09_ex4_bringup" type="publisher.py" name="publisher_A" output="screen">
+    <remap from="/chatter" to="/dog1"/>
+  </node>
+
+
+  <node pkg="psr_parte09_ex4_bringup" type="publisher.py" name="publisher_B" output="screen">
+    <remap from="/chatter" to="/dog1"/>
+  </node>
+
+  <node pkg="psr_parte09_ex4_bringup" type="publisher.py" name="publisher_C" output="screen">
+    <remap from="/chatter" to="/dog2"/>
+  </node>
+
+
+
+
+  <node pkg="psr_parte09_ex4_bringup" type="subscriber.py" name="subscriber_AB1" output="screen">
+    <remap from="/chatter" to="/dog1"/>
+  </node>
+
+  <node pkg="psr_parte09_ex4_bringup" type="subscriber.py" name="subscriber_AB2" output="screen">
+    <remap from="/chatter" to="/dog1"/>
+  </node>
+
+  <node pkg="psr_parte09_ex4_bringup" type="subscriber.py" name="subscriber_C" output="screen">
+    <remap from="/chatter" to="/dog2"/>
+  </node>
+
+
+</launch>
