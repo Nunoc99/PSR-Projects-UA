@@ -1,0 +1,10 @@
+[{"Division":"Double Room","x": -4.75, "y": 2.20, "Orient_z": 0.85, "Orient_w": 0.57}, 
+{"Division":"Single Room","x": -1.8, "y": 2.0, "Orient_z": 0.85, "Orient_w": 0.52}, 
+{"Division":"Office","x": -0.75, "y": 2.0, "Orient_z": 0.53, "Orient_w": 0.85},
+{"Division":"Kitchen","x": -5.26, "y": -0.84,"Orient_z": 0.0, "Orient_w": 1}, 
+{"Division":"WC1","x": -0.40, "y": 0.95, "Orient_z": 0.0, "Orient_w": 1},
+{"Division":"WC2","x": 0.2, "y": -1.5, "Orient_z": 0.0, "Orient_w": 1},
+{"Division":"Living Room","x": -0.67, "y": -2.24, "Orient_z": 0.89, "Orient_w": -0.45},
+{"Division":"Dining Room","x": -5.32, "y": -0.53, "Orient_z": -0.75, "Orient_w": 0.66},
+{"Division":"Terrace","x": -7.06, "y": -4.65, "Orient_z": 0.81, "Orient_w": 0.59},
+{"Division":"Initial Position","x": -1.5, "y": -4.0, "Orient_z": 0.0, "Orient_w": 1}]

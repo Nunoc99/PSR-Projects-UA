@@ -1,0 +1,32 @@
+<launch>
+
+    <!-- Mercury -->
+    <node name="mercury" pkg="psr_parte11_ex3" type="circular_frame.py">
+        <remap from="parent" to="sun"/>
+        <remap from="child" to="mercury"/>
+        <param name="radius" type="double" value="0.387" />
+        <param name="speed" type="double" value="0.0159" />
+    </node>
+
+    <node name="venus" pkg="psr_parte11_ex3" type="circular_frame.py">
+        <remap from="parent" to="sun"/>
+        <remap from="child" to="venus"/>
+        <param name="radius" type="double" value="0.723" />
+        <param name="speed" type="double" value="0.0518" />
+    </node>
+
+    <node name="earth" pkg="psr_parte11_ex3" type="circular_frame.py">
+        <remap from="parent" to="sun"/>
+        <remap from="child" to="earth"/>
+        <param name="radius" type="double" value="1" />
+        <param name="speed" type="double" value="0.01" />
+    </node>
+
+    <node name="moon" pkg="psr_parte11_ex3" type="circular_frame.py">
+        <remap from="parent" to="earth"/>
+        <remap from="child" to="moon"/>
+        <param name="radius" type="double" value="0.0257" />
+        <param name="speed" type="double" value="0.343" />
+    </node>
+
+</launch>
