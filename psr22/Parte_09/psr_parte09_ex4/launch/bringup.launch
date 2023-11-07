@@ -1,0 +1,20 @@
+<launch>
+
+    <rosparam command = "load" file="$(find psr_parte09_ex4)/params/params.yaml" />
+
+    <node pkg="psr_parte09_ex4" type="publisher.py" name="node_bruno" required="True" output="screen">
+        <remap from="~chatter" to="/chatter"/>
+    </node>
+
+
+    <node pkg="psr_parte09_ex4" type="publisher.py" name="node_nuno" required="True" output="screen">
+        <remap from="~chatter" to="/chatter"/>
+    </node>
+
+    <node pkg="psr_parte09_ex4" type="subscriber.py" name="sub1" required="True" output="screen"/>
+    <node pkg="psr_parte09_ex4" type="subscriber.py" name="sub2" required="True" output="screen"/>
+    <node pkg="psr_parte09_ex4" type="subscriber.py" name="sub3" required="True" output="screen"/>
+    <node pkg="psr_parte09_ex4" type="subscriber.py" name="sub4" required="True" output="screen"/>
+    
+
+</launch>
